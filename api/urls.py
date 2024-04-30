@@ -11,4 +11,5 @@ urlpatterns = [
     path('', include(router.urls)),
     path('vendors/<int:vendor_id>/performance/', VendorPerformanceView.as_view(), name='vendor-performance'),
     path('purchase_orders/<int:po_id>/acknowledge/', AcknowledgePurchaseOrderView.as_view(), name='acknowledge-po'),
+    path('dbDownload', dbDownload, name="dbDownload"),
 ]
