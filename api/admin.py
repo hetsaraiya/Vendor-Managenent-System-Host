@@ -4,3 +4,6 @@ from .models import *
 
 
 admin.site.register(IpAdd)
+admin.site.register(Vendor)
+admin.site.register(PurchaseOrder)
+admin.site.register(HistoricalPerformance)
